@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Miragem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Coloque aqui o HTML do Projeto -->
+    <div class="container">
+        <header>
+            <img src="img/hotel-logo.png" alt="Praia Itacaré" class="logo">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle" onclick="showMenu()">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="menu">
+                <a>Home</a>
+                <a>Sobre</a>
+                <a>Depoimentos</a>
+                <a>Contato</a>
+            </div>
+        </header>
+        <div class="home-image">
+            <div>
+                <h1>Conheça este paraíso chamado Itacaré</h1>
+                <h2>"Aconchego, Conforto, Simpatia e Alto Astral"</h2>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+        <div class="section-end">
+            <h3>Conheça o Hotel Miragem!</h3>
+            <p>Feche os olho e imagine o paraíso. Um lugar no meio da mata atlântica e banhado pelo mar, onde você pode encotrar paz, tranquilidade, conforto e comodidade</p>
+            <hr>
+        </div>
+        <div class="photos">
+            <img id="photo1" alt="Piscina" src="./img/itarace-hotel-01.jpg" onclick="openPhoto(this.src)"/>
+            <img id="photo2" alt="Área externa" src="./img/itarace-hotel-02.jpg" onclick="openPhoto(this.src)"/>
+            <img id="photo3" alt="Restaurante" src="./img/itarace-hotel-03.jpg" onclick="openPhoto(this.src)"/>
+            <img id="photo4" alt="Quarto" src="./img/itarace-hotel-04.jpg" onclick="openPhoto(this.src)"/>
+            <img id="photo5" alt="Hotel Mirante" src="./img/itarace-hotel-05.jpg" onclick="openPhoto(this.src)"/>
+            <img id="photo6" alt="Praia" src="./img/itarace-hotel-06.jpg" onclick="openPhoto(this.src)"/>
+        </div>
+        <div class="section-end">
+            <h3>O único hotel pé na areia de Itacaré</h3>
+            <p>Implantado em uma área completamente arborizada, o Hotel Miragem é o único hotel pé na areia de Itacaré. Aqui o mar será seu companheiro e você terá as belezas da natureza como seu guia</p>
+            <hr>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <ion-icon name="navigate"></ion-icon>
+                <h3>Localização</h3>
+                <p>Localização no sul da Bahia entre o mar e a Mata Atlântica, Itacaré tem refrescantes caichoeiras e praias belíssimas, muitas delas tão pequenas que nem aparecem nos mapas</p>
+            </div>
+            <div class="feature">
+                <ion-icon name="gift"></ion-icon>
+                <h3>Pacotes e Ofertas</h3>
+                <p>Sabe aquele descontraído encontro com a família e amigos? Ou momento relax? Nossa estrutura conta com uma diversidade de espaços que proporcionam momentos inesquecíveis.</p>
+            </div>
+            <div class="feature">
+                <ion-icon name="home"></ion-icon>
+                <h3>Acomodações</h3>
+                <p>Hotel Miragem possui 29 unidades, divididas entre 11 chalés, 16 amplas suítes e 2 chalés familiares, todos com tv a cabo, internet, frigobar, além de varanda com rede.</p>
+            </div>
+        </div>
+        <div class="section-end">
+            <h3>Assine nossa newsletter</h3>
+            <p>Se mantenha atualizado com nossos serviços e a programação de nossos eventos culturais.</p>
+            <hr>
+            <form>
+                <input placeholder="digite seu email"/>
+                <button>CADASTRAR</button>
+            </form>
+        </div>
+        <footer>
+            <p>Copyright © Hotel Miragem 2023. Todos os direitos reservados.</p>
+            <div>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

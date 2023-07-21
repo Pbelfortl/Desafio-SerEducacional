@@ -1,0 +1,22 @@
+function showMenu (element) {
+    const menu = document.querySelector(".menu")
+    menu.classList.toggle("show")
+}
+
+function openPhoto (photo) {
+
+    const container = document.querySelector(".container")
+
+    const photoDiv = `
+    <div class="show-photo">
+        <button onclick="closePhoto()">X</button>
+        <img src="${photo}" />
+    </div>
+    `
+    container.innerHTML = container.innerHTML + photoDiv
+}
+
+function closePhoto () {
+    const element = document.querySelector(".show-photo")
+    element.remove()
+} 
