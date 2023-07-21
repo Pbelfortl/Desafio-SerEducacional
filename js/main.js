@@ -9,8 +9,10 @@ function openPhoto (photo) {
 
     const photoDiv = `
     <div class="show-photo">
-        <button onclick="closePhoto()">X</button>
-        <img src="${photo}" />
+        <div>
+            <button onclick="closePhoto()">X</button>
+            <img src="${photo}" />
+        </div>
     </div>
     `
     container.innerHTML = container.innerHTML + photoDiv
