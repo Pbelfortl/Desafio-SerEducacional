@@ -23,13 +23,13 @@ header {
 h1 {
     font-size: 38px;
     color: var(--color-light);
-    text-shadow: 2px 2px 3px var(--color-blue3);
+    text-shadow: 3px 3px 3px var(--color-blue3);
 }
 
 h2 {
     font-size: 22px;
     color: var(--color-light);
-    text-shadow: 2px 2px 3px var(--color-blue3);
+    text-shadow: 3px 3px 3px var(--color-blue3);
 }
 
 h3 {
@@ -49,6 +49,10 @@ header img {
 
 :hover a, button, footer ion-icon, .photos img{
     cursor: pointer;
+}
+
+:hover menu a {
+    color: var(--color-blue3);
 }
 
 .home-image {
@@ -360,16 +364,18 @@ footer p {
         visibility: collapse;
         transition: all 300ms ease-in-out;
         color: transparent;
+        font-size: 0;
     }
 
     a {
         color: var(--color-light);
     }
 
-    .show {
+    .show-menu {
         visibility: visible;
         height: 300px;
         transition: all 300ms ease-in-out;
+        font-size: 18px;
     }
 
     header img {
@@ -378,7 +384,7 @@ footer p {
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     h3 {
@@ -391,7 +397,8 @@ footer p {
     }
 
     .home-image div {
-        height: auto;
+        height: 250px;
+        text-shadow: 2px 2px 3px var(--color-grey);
     }
 
     .section-end {
@@ -418,13 +425,10 @@ footer p {
         height: 300px;
     }
 
-    .feature p {
-        width: 90vw;
-    }
-
     p {
-        font-size: 18px;
-        width: 95vw;
+        font-size: 20px;
+        width: 80vw;
+        color: var(--color-dark);
     }
 
     form button, input {
@@ -435,10 +439,21 @@ footer p {
         text-align: start;
     }
 
+    footer {
+        height: 150px;
+        font-size: 32px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
     footer div {
-        margin-top: 15px;
+        width: 85px;
+        margin-top: 10px;
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        font-size: 20px;
+        font-size: 26px;
     }
 }
